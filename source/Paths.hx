@@ -123,7 +123,7 @@ class Paths
 
 	static public function sound(key:String, ?library:String):Dynamic
 	{
-		#if MODS_ALLOWED
+		#if windows 
 		var file:String = modsSounds(key);
 		if(FileSystem.exists(file)) {
 			if(!customSoundsLoaded.exists(file)) {
