@@ -87,7 +87,7 @@ class OptionsState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			MusicBeatState.switchState(new MainMenuState());
 		
-#if android
+                #if android
 		if (virtualPad.buttonC.justPressed) {
 			#if android
 			removeVirtualPad();
